@@ -18,6 +18,13 @@ Cracking Passwords via:
 * Ransomware attack
 
 
+Software:
+* Sanboxie
+* Chromium or Ungoogled Chromium
+* DNSCrypt
+* Unbound
+
+
 Are you safe if:
 * You aren’t regularly deploying the latest security patches?
 * You disabled a security feature after a user complained Facebook was slower?
@@ -89,3 +96,4 @@ Specify a Custom Active Power Plan = enabled, GUID = 381b4222-f694-41f0-9685-ff5
 
 Research:
 * https://nakedsecurity.sophos.com/2016/05/16/my-anti-virus-is-up-to-date-so-i-am-protected-right/
+* https://github.com/iadgov/Secure-Host-Baseline
