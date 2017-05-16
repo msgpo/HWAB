@@ -15,6 +15,7 @@ Cracking Passwords via:
 * Rainbow Table
 * Spidering attack
 * Keylogger attack
+* Ransomware attack
 
 
 Are you safe if:
