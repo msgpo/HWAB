@@ -23,6 +23,7 @@ Software:
 * Chromium or Ungoogled Chromium
 * DNSCrypt
 * Unbound
+* RamDisk (optional)
 
 
 Are you safe if:
