@@ -20,9 +20,9 @@ Cracking Passwords via:
 
 Software:
 * Sanboxie
-* Chromium or Ungoogled Chromium
+* Chromium ~or Ungoogled Chromium~
 * DNSCrypt
-* Unbound
+* Unbound (as cache)
 * RamDisk (optional)
 
 
