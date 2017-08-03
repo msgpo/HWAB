@@ -1,0 +1,38 @@
+# enforce router DNS
+iptables -t nat -I PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
+iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
+
+# rules
+iptables -I FORWARD -j DROP -d 13.80.12.54
+iptables -I FORWARD -j DROP -d 13.107.3.128
+iptables -I FORWARD -j DROP -d 13.107.21.200
+iptables -I FORWARD -j DROP -d 23.97.178.173
+iptables -I FORWARD -j DROP -d 40.77.224.8
+iptables -I FORWARD -j DROP -d 40.77.225.248
+iptables -I FORWARD -j DROP -d 40.77.226.0/24
+iptables -I FORWARD -j DROP -d 40.118.103.7
+iptables -I FORWARD -j DROP -d 40.127.142.76
+iptables -I FORWARD -j DROP -d 64.4.54.0/24
+iptables -I FORWARD -j DROP -d 65.52.100.11
+iptables -I FORWARD -j DROP -d 65.52.100.93
+iptables -I FORWARD -j DROP -d 65.52.108.0/24
+iptables -I FORWARD -j DROP -d 65.55.108.23
+iptables -I FORWARD -j DROP -d 65.55.252.43
+iptables -I FORWARD -j DROP -d 104.44.88.28
+iptables -I FORWARD -j DROP -d 104.44.88.103
+iptables -I FORWARD -j DROP -d 104.214.77.221
+iptables -I FORWARD -j DROP -d 104.215.146.200
+iptables -I FORWARD -j DROP -d 131.253.34.230
+iptables -I FORWARD -j DROP -d 131.253.61.0/24
+iptables -I FORWARD -j DROP -d 134.170.185.70
+iptables -I FORWARD -j DROP -d 168.63.18.79
+iptables -I FORWARD -j DROP -d 204.79.197.0/24
+iptables -I FORWARD -j DROP -d 207.46.7.252
+iptables -I FORWARD -j DROP -d 207.46.101.29
+iptables -I FORWARD -j DROP -d 207.46.153.155
+iptables -I FORWARD -j DROP -d 207.46.194.14
+iptables -I FORWARD -j DROP -d 207.46.194.25
+iptables -I FORWARD -j DROP -d 207.46.194.33
+iptables -I FORWARD -j DROP -d 207.46.194.40
+iptables -I FORWARD -j DROP -d 207.46.223.94
+iptables -I FORWARD -j DROP -d 207.68.166.254
