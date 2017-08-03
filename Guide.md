@@ -249,11 +249,14 @@ Do not sync or store passwords within the Browser, better use [KeePass](http://k
 Settings:
 
 * Configure your browser to deny 3rd party cookies.
-* Remove any bundled plugins/extensions installed by default.
+* Remove any bundled plugins/extensions installed by default (if some are pre-installed).
 * Disable any location/prediction/spellcheck services.
-* Set StartPage as your homepage and search engine.
+* Set [StartPage](https://www.startpage.com) or [MetaGer](https://metager.de/en) as your homepage and search engine.
 * 99.9% of web exploits, tracking and fingerprinting starts with malicious JavaScript execution hosted by known Malware domains.
-* Take the time to configure each plugin on ‘expert’ mode!
+* Take the time to configure each plugin on ‘expert’ mode! (see link below)
+
+
+My extension recommendations and suggested settings can be found over [here](https://github.com/CHEF-KOCH/Chromium-hardening).
 
 
 
