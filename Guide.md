@@ -243,6 +243,8 @@ It is strongly recommended to encapsulate all network traffic beyond your own co
 
 I only trust [Chromium](https://chromium.woolyss.com), since I'm part of the community and developer I can at least say [it's by design more efficient and secure than other browsers](https://github.com/CHEF-KOCH/Chromium-hardening). [UnGoogled Chromium](https://github.com/Eloston/ungoogled-chromium) shouldn't be used because it's a study project which not gets maintained as often as it should be to recommend it. 
 
+Do not sync or store passwords within the Browser, better use [KeePass](http://keepass.info/) instead. The reason is that a local or even remote attacker can read-out all Chrome/Browser passwords because there in plain text stored while other tools encrypt your passwords locally. 
+
 
 Settings:
 
@@ -250,8 +252,16 @@ Settings:
 * Remove any bundled plugins/extensions installed by default.
 * Disable any location/prediction/spellcheck services.
 * Set StartPage as your homepage and search engine.
-* 99.9% of web exploits, tracking and fingerprinting starts with malicious JavaScript execution hosted by known malware domains.
+* 99.9% of web exploits, tracking and fingerprinting starts with malicious JavaScript execution hosted by known Malware domains.
 * Take the time to configure each plugin on ‘expert’ mode!
+
+
+
+###Website logins
+
+If possible always try to use a [YubiKey](https://www.yubico.com/start/). There exist [several versions](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/), the blue one is normally enough but I recommend v4 instead which supports a higher RSA and ECC standard. 
+
+Besides this use Keepass (as already mentioned) both solutions are compatible and working on ‘every’ (modern) system. 
 
 
 
