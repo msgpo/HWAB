@@ -1,5 +1,5 @@
 # HWAB
-Harden Windows AND Browser (short: HWAB) is designed to explain and keep an eyes on the security aspect
+Harden Windows AND Browser (short: HWAB) is designed to explain and keep an eyes on the security aspect.
 
  
 Since a lot of people asking me how to secure/harden Windows and Browser to lower the security risk and attack factor I created this little repo to answer the most questions and show examples in easy step by step examples.
@@ -8,25 +8,25 @@ Since a lot of people asking me how to secure/harden Windows and Browser to lowe
 This is currently under construction, so nothing much to show here. But I will upload and maintain this project regularly as I have time.
 
 
-Cracking Passwords via:
-* Brute force attack
-* Dictionary Hacking
-* Phishing
-* Rainbow Table
-* Spidering attack
-* Keylogger attack
-* Ransomware attack
+Guide focus:
+* Brute force attack(s)
+* Dictionary Hacking(s)
+* Phishing attack(s)
+* Spidering attack(s)
+* Keylogger attack(s)
+* Ransomware attack(s)
+* Audit(s)
 
 
-Software:
-* Sanboxie
-* Chromium ~or Ungoogled Chromium~
-* DNSCrypt
-* Unbound (as cache)
-* RamDisk (optional)
+Software focus:
+* [Sanboxie](https://www.sandboxie.com)
+* [Chromium](http://chromium.woolyss.com) ~or Ungoogled Chromium~
+* [DNSCrypt](https://dnscrypt.org) or [Simple DNSCrypt](https://simplednscrypt.org/)
+* [Unbound](http://unbound.net/) (used as cache)
+* [RamDisk](https://sourceforge.net/projects/imdisk-toolkit/) (optional)
 
 
-Are you safe if:
+Main questions will be answered like - are you safe if:
 * You aren’t regularly deploying the latest security patches?
 * You disabled a security feature after a user complained Facebook was slower?
 * You have unprotected mobile devices that can connect to file shares?
