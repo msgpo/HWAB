@@ -1,18 +1,18 @@
-###Distrust everything #trustno1
+### Distrust everything #trustno1
 
 Microsoft has made much progress improving the security capabilities of their Operating System (OS). However, their pervasive use of “telemetry” and forcing software installation/upgrades, has cost them the trust of some customers.
 
 Other hardware/software corporations are also installing telemetry software that calls home (Intel, Nvidia, Lenovo, Apple,...). Corporate surveillance is big business and here to stay.
 
 
-###Media Installation
+### Media Installation
 
 Install a fresh copy of [Windows 10 Anniversary Edition (v1607) LTSB/LTSC](https://docs.microsoft.com/en-us/sccm/core/understand/introduction-to-the-ltsb) even if that means you need to crack it (I not explain how), this might forces MS to push this version more. You get fresh copies (verified ones) [here](https://tb.rg-adguard.net/index.php?lang=en-US), always check the checksums!
 
 You could manipulate/change the configuration with [Rufus](https://rufus.akeo.ie) or [NTLite](https://www.ntlite.com/download/) to e.g. integrate some [regtweaks](https://github.com/CHEF-KOCH/regtweaks), windows cumulative updates or drivers.
 
 
-###Full Disk Encryption (FDE)
+### Full Disk Encryption (FDE)
 
 You have several options to secure your “data at rest” by encrypting it before writing it to disk. It is even possible to combine all three.
 
@@ -22,14 +22,14 @@ You have several options to secure your “data at rest” by encrypting it befo
 
 
 
-###Hardware-based (SED)
+### Hardware-based (SED)
 You can enable your Self-Encrypting Drive (SED) by setting a secure password when configuring your BIOS/UEFI. This is not the same as setting a supervisor password!
 
 * Transparent full drive encryption on your Solid State Drive (SSD) has almost no performance downside. 
 * Keep in mind that the encryption keys are kept inside your TPM chip, which is unlikely to survive a destructive hardware attack. Protect yourself by making regular backups.
 
 
-###Microsoft BitLocker
+### Microsoft BitLocker
 BitLocker is [only available for Pro, Enterprise and Education](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/bitlocker-overview) licensees of Windows 10. The keys are also kept inside your TPM chip. Trust?!
 
 
@@ -41,7 +41,7 @@ There are advantages to using BitLocker though:
 
 
 
-###VeraCrypt
+### VeraCrypt
 I use VeraCrypt, a free and open-source (FOSS), cross-platform that [passed an independent audit](https://ostif.org/the-veracrypt-audit-results/). You too can learn to memorize a 32+ character passphrase. Isntthatsimpletokeepaneasy2usepasswordinyaBrain?!
 VeraCrypt supports GPT too.
 
@@ -50,7 +50,7 @@ Converting later will require a full reformat or purchasing commercial partition
 
 
 
-###BIOS/UEFI
+### BIOS/UEFI
 
 Your Basic Input Output System (BIOS) is the codebase which initializes your hardware and loads the files that boot your Operating System.
 
@@ -89,7 +89,7 @@ Save and exit settings to reboot from your Installation Media.
 
 
 
-###Windows Installation
+### Windows Installation
 
 As stated, I recommend everyone to start with a fresh installation of Windows 10. Modern malware is very persistent, bootkits and rootkits are hard to detect.
 
@@ -110,7 +110,7 @@ During installation and setup please:
 * Your system still remains offline!
 
 
-###Side-loading updates
+### Side-loading updates
 
 Review Updates, check the growd if there are negative side-effects before you install the update(s)! Personally I highly recommend side-loading essential applications, vendor drivers, and Windows updates. 
 
@@ -126,7 +126,7 @@ Review Updates, check the growd if there are negative side-effects before you in
 
 
 
-###Security & privacy tools
+### Security & privacy tools
 
 Until we get into Group Policy Editor and Windows Firewall territory, I recommend running a few consumer tools to kick off the process:
 
@@ -141,7 +141,7 @@ Until we get into Group Policy Editor and Windows Firewall territory, I recommen
 Unless manually enforced using a Group Policy Object, Microsoft will re-enable telemetry, firewall rules, and unwanted features during the next Feature upgrade or if you ever run System File Checker ([sfc](https://technet.microsoft.com/en-us/library/bb491008.aspx)). You would be wise to update & re-run your preferred privacy tools after a major Windows 10 release — these projects do a good job staying on top of things. Check their compatibility first! Use [Process Hacker](http://processhacker.sourceforge.net) to reverse engineer their actions if you want to enforce it using Group Policy/Scripts (or across AD connected workstations).
 
 
-###Turn off Windows Features
+### Turn off Windows Features
 
 We want to reduce our systems’ attack surface as much as possible: which means removing features and outdated capabilities we will never use. You will want to go over which Windows Features to turn off.
 
@@ -149,7 +149,7 @@ We want to reduce our systems’ attack surface as much as possible: which means
 * I disabled .NET 3.5, SMB v1 and PowerShell 2. You could go much further (depending on your needs).
 
 
-###Turn off Windows Services
+### Turn off Windows Services
 
 When you run [Sysinternals Autoruns](https://technet.microsoft.com/en-us/sysinternals/bb963902) with administrative privileges, it becomes a great tool to start managing the programs and services that are set to run at one point or another.
 
@@ -164,7 +164,7 @@ For now, under Administrative Tools > Services (or by running ‘services.msc’
 * More suggestions can be found [here](http://www.blackviper.com/service-configurations/black-vipers-windows-10-service-configurations/).
 
 
-###Turn off Networking Capabilities
+### Turn off Networking Capabilities
 There are a few modifications to we should make to our Wifi Settings and Network Adapters.
 
 First, make it [more difficult to track your location](http://www.mathyvanhoef.com/2016/03/how-mac-address-randomization-works-on.html) across WiFi networks:
@@ -195,7 +195,7 @@ In that same window, select ‘Internet Protocol Version 4 (TCP/IPv4)’ and cli
 Repeat these steps for all appropriate networked adapters. Your system still remains offline.
 
 
-###Uninstall Software
+### Uninstall Software
 
 I run most of my tools from inside a [Virtual Machine](https://www.vmware.com/) and [Sandboxie](https://www.sandboxie.com/). I not can recommend VirtualBox anymore cause slow support and it in general is slower than VMWare in so many aspects.
 
@@ -215,7 +215,7 @@ I quickly uninstalled the following:
 
 
 
-###DNS
+### DNS
 
 The Domain Name Service (DNS) is the reason your Internet Service Provider (ISP) knows exactly which websites you are visiting. Many countries, including Germany, the United Kingdom, and the United States, allow their Federal police to hack their citizens. DNSCrypt is an excellent way to verify that responses originate from the chosen DNS resolver and have not been spoofed.
 
@@ -227,7 +227,7 @@ I not recommend OpenDNS, instead I recommend the [OpenNIC project](https://www.o
 
 
 
-###Virtual Private Networks (VPN)
+### Virtual Private Networks (VPN)
 
 Your internet history is [accessible for at least 48 institutions without a warrant](https://yro.slashdot.org/story/16/11/29/1432217/the-uk-is-about-to-legalize-mass-surveillance-update) in the United Kingdom. [Other countries are doomed to follow](https://www.schneier.com/blog/archives/2016/12/my_priorities_f.html).
 
@@ -239,7 +239,7 @@ It is strongly recommended to encapsulate all network traffic beyond your own co
 
 
 
-###Browser’s
+### Browser’s
 
 I only trust [Chromium](https://chromium.woolyss.com), since I'm part of the community and developer I can at least say [it's by design more efficient and secure than other browsers](https://github.com/CHEF-KOCH/Chromium-hardening). [UnGoogled Chromium](https://github.com/Eloston/ungoogled-chromium) shouldn't be used because it's a study project which not gets maintained as often as it should be to recommend it. 
 
@@ -257,7 +257,7 @@ Settings:
 
 
 
-###Website logins
+### Website logins
 
 If possible always try to use a [YubiKey](https://www.yubico.com/start/). There exist [several versions](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/), the blue one is normally enough but I recommend v4 instead which supports a higher RSA and ECC standard. 
 
@@ -265,7 +265,7 @@ Besides this use Keepass (as already mentioned) both solutions are compatible an
 
 
 
-###Group Policy Editor/Objects
+### Group Policy Editor/Objects
 
 Windows Updates (and upgrades) tend to ‘flip settings’ back to their insecure defaults. Microsoft only seems to respect settings enforced using central Group Policy Objects (GPOs). Even if you are not a seasoned IT professional — you will love being able to manage most settings for all user accounts from a single program (‘gpedit.msc’). An [up to date settings reference for Windows 10 is available in Excel format](https://www.microsoft.com/en-us/download/details.aspx?id=25250).
 
@@ -295,7 +295,7 @@ A reboot may be required to load these extensions.
 
 
 
-###Secure Host Baselines
+### Secure Host Baselines
 
 Several well-funded organizations give advice on what makes a configuration “secure.”
 
@@ -313,7 +313,7 @@ Establishing a [Secure Host Baseline](https://www.iad.gov/iad/library/ia-guidanc
 
 
 
-###DoD Secure Host Baseline
+### DoD Secure Host Baseline
 
 I like the [DoD Secure Host Baseline project on Github](https://github.com/iadgov/Secure-Host-Baseline). It is a collection of PowerShell scripts that are relatively painless to apply.
 Hit the Windows Key + X keyboard shortcut and launch Windows PowerShell (Admin). 
@@ -360,7 +360,7 @@ Another reboot is required to apply all changes!
 
 
 
-###Microsoft Security Compliance Manager
+### Microsoft Security Compliance Manager
 
 Microsoft has released an excellent tool which allows you to apply their “[Microsoft ”Recommended Security Baselines](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-security-baselines).” This tool will soon be replaced by the DSC Environment Analyzer (DSCEA), likely before the [v1703 security baselines is ready for production](https://blogs.technet.microsoft.com/secguide/2017/06/15/security-baseline-for-windows-10-creators-update-v1703-draft/), so keep that in mind.
 
@@ -372,7 +372,7 @@ Once installed, under the ‘Get knowledge’ column, you can download Microsoft
 
 
 
-###Microsoft Policy Analyzer
+### Microsoft Policy Analyzer
 
 Another tool to geek out over is the [Microsoft Policy Analyzer tool](https://blogs.technet.microsoft.com/secguide/), which shows the differences between your local policy/registry and as many GPO backups as you "Add & select".
 
@@ -382,7 +382,7 @@ The DoD Secure Host Baseline template has the more secure defaults in most cases
 
 
 
-###Customizing Group Policy
+### Customizing Group Policy
 
 There is no substitute to manually stepping through my options with the Group Policy Editor (by running ‘gpedit.msc’). Improve its readability by sorting the ‘Setting’ or ‘State’ column. The wording for some settings can be very counter-intuitive. Luckily each option has a clear description.
 
@@ -406,7 +406,7 @@ It can be very insightful to repeat this step as [new CIS benchmark documents ar
 
 
 
-###Merging Baselines
+### Merging Baselines
 
 The information the Policy Analyzer gives me allows me to quickly combine the best of two baselines together and customize my settings as desired. 
 
@@ -422,7 +422,7 @@ Despite primarily working from VMWare, some settings aimed at improving security
 
 
 
-###Telemetry
+### Telemetry
 
 As you are stepping through your options, you will not only discover Chrome has a Dinosaur Easter Egg Game, but that many apps have some form of:
 
@@ -438,7 +438,7 @@ The DoD baseline has done a good job disabling most, but not all. Note that unle
 
 
 
-###Strict policy reapplication
+### Strict policy reapplication
 
 Make sure to enforce strict reapplication of critical policies:
 
@@ -448,7 +448,7 @@ Make sure to enforce strict reapplication of critical policies:
 
 
 
-###Deny access from the network
+### Deny access from the network
 
 I will never need to remotely login to my workstation:
 
@@ -458,7 +458,7 @@ I will never need to remotely login to my workstation:
 * ‘Deny log on through Remote Desktop Services’
 
 
-###Windows own DNS Client
+### Windows own DNS Client
 
 Windows 10’s DNS Client just accepts whichever response it receives first, not necessarily the one from your intended DNS server. Personally I disabled Windows own DNS client entirely via services.msc and use [Unbound](http://unbound.net/) instead. 
 
@@ -471,13 +471,13 @@ Windows 10’s DNS Client just accepts whichever response it receives first, not
 We can later enforce this policy using Windows Firewall as a technical control.
 
 
-###Windows NTP Client
+### Windows NTP Client
 
 Configure the Windows Network Time Protocol (NTP) Client to [use trusted, non-Microsoft servers](http://tf.nist.gov/tf-cgi/servers.cgi) —perhaps even authenticated ones. At least till Google’s ‘[roughtime protocol](https://roughtime.googlesource.com/roughtime)’ is synchronizing our clocks.
 
 
 
-###SSL/TLS Standards
+### SSL/TLS Standards
 
 You can enforce the use of modern TLS standards system-wide:
 
@@ -515,7 +515,7 @@ Review the Control Panel > Internet Options > Advanced tab and uncheck ‘Use HT
 
 
 
-###LSA Protection
+### LSA Protection
 
 It is recommended to [configure additional LSA Protection](https://technet.microsoft.com/en-us/library/dn408187%28v=ws.11%29.aspx) to defeat tools like [MimiKatz](https://github.com/gentilkiwi/mimikatz).
 
@@ -527,7 +527,7 @@ It is recommended to [configure additional LSA Protection](https://technet.micro
 * **WDigest Authentication** should already be disabled to prevent transmission of credentials across the network as a weak MD5 hash or message digest.
 
 
-###Net Session Enumeration
+### Net Session Enumeration
 
 Run the [NetCease](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b) PowerShell script to mitigate against a method [Bloodhound](https://github.com/adaptivethreat/BloodHound) uses.
 
@@ -541,7 +541,7 @@ Unblock-File -Path '.\NetCease.zip'
 Restart the Server service (or reboot).
 
 
-###Web Proxy Auto-Discovery Protocol (WPAD)
+### Web Proxy Auto-Discovery Protocol (WPAD)
 
 We already disabled the ‘WinHTTP Web Proxy Auto-Discovery Service’ service and unchecked the ‘Auto-detect setting’s’ Internet Options property.
 
@@ -554,7 +554,7 @@ We already disabled the ‘WinHTTP Web Proxy Auto-Discovery Service’ service a
 Registry changes require a reboot.
 
 
-###Windows Script Host (WSH)
+### Windows Script Host (WSH)
 
 Malware often abuses functionality that allows apps and processes to be automated; Windows Script Host is a classic example. 
 
@@ -568,7 +568,7 @@ Disabling WSH may prevent you from running .bat batch files.
 
 
 
-###Windows Firewall with Advanced Security
+### Windows Firewall with Advanced Security
 
 Windows Firewall (WFAS) is our technical security control that enforces our intended policies and supplements them when needed. You can see every existing Firewall rule using the ‘Windows Firewall with Advanced Security’ desktop app (or by running ‘WF.msc’).
 
@@ -588,7 +588,7 @@ Unless you create an explicit Block rule for each or disable merging of local fi
 Force yourself to apply the principle of minimal privilege.
 
 
-###AppLocker
+### AppLocker
 
 One of the most powerful defense strategies is whitelisting which applications are allowed to run with [Windows AppLocker](https://technet.microsoft.com/en-us/library/dd759117%28v=ws.11%29.aspx).
 
@@ -605,7 +605,7 @@ All AppLocker policies are created and managed using Group Policy under:
 
 
 
-###Two Factor Authentication
+### Two Factor Authentication
 
 Solely relying on a username/password or even out-of-bound SMS authentication using your cell phone will not be secure enough in 2017 (NIST 800–63A/B/C). [U2F security keys are your best hope against account takeovers](https://it.slashdot.org/story/16/12/24/0037256/u2f-security-keys-may-be-the-worlds-best-hope-against-account-takeovers).
 I highly recommend buying and learning how to use a [Yubikey](https://www.yubico.com/why-yubico/for-individuals/). The YubiKey 4 is now closed-source but the NEOs are still using open-source code others can independently verify. It integrates well [with Windows 10](https://www.yubico.com/why-yubico/for-businesses/computer-login/windows-login/). If you not want to go with a YubiKey you can take a look at [Authy](https://authy.com). 
