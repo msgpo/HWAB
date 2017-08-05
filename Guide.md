@@ -42,7 +42,7 @@ There are advantages to using BitLocker though:
 
 
 ### VeraCrypt
-I use VeraCrypt, a free and open-source (FOSS), cross-platform that [passed an independent audit](https://ostif.org/the-veracrypt-audit-results/). You too can learn to memorize a 32+ character passphrase. Isntthatsimpletokeepaneasy2usepasswordinyaBrain?!
+I use [VeraCrypt](https://sourceforge.net/projects/veracrypt/), a free and open-source (FOSS), cross-platform that [passed an independent audit](https://ostif.org/the-veracrypt-audit-results/). You too can learn to memorize a 32+ character passphrase. Isntthatsimpletokeepaneasy2usepasswordinyaBrain?!
 VeraCrypt supports GPT too.
 
 

@@ -26,6 +26,10 @@ Software focus:
 * [RamDisk](https://sourceforge.net/projects/imdisk-toolkit/) (optional)
 
 
+OS Focus:
+* Windows 
+
+
 Main questions will be answered like - are you safe if:
 * You aren’t regularly deploying the latest security patches?
 * You disabled a security feature after a user complained Facebook was slower?
