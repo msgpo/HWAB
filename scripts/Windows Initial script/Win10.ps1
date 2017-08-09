@@ -7,7 +7,7 @@
 #
 # Author: CHEF-KOCH
 # Version: 0.6
-# Source: 
+# Source: https://github.com/CHEF-KOCH/HWAB/tree/master/scripts/Windows%20Initial%20script
 ##########
 
 # Default preset

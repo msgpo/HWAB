@@ -2,7 +2,7 @@
 Harden Windows AND Browser (short: HWAB) is designed to explain and keep an eyes on the security aspect.
 
  
-Since a lot of people asking me how to secure/harden Windows and Browser to lower the security risk and attack factor I created this little repo to answer the most questions and show examples in easy step by step examples.
+Since a lot of people asking me how to secure/harden Windows and Browser to lower the security risk and attacking factor I decided to created this little repo which answers the most questions and shows examples.
 
 
 This is currently under construction, so nothing much to show here. But I will upload and maintain this project regularly as I have time.
@@ -27,7 +27,7 @@ Software focus:
 
 
 OS Focus:
-* Windows 
+* Microsoft Windows
 
 
 Main questions will be answered like - are you safe if:
