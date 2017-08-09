@@ -665,3 +665,21 @@ All AppLocker policies are created and managed using Group Policy under:
 
 Solely relying on a username/password or even out-of-bound SMS authentication using your cell phone will not be secure enough in 2017 (NIST 800–63A/B/C). [U2F security keys are your best hope against account takeovers](https://it.slashdot.org/story/16/12/24/0037256/u2f-security-keys-may-be-the-worlds-best-hope-against-account-takeovers).
 I highly recommend buying and learning how to use a [Yubikey](https://www.yubico.com/why-yubico/for-individuals/). The YubiKey 4 is now closed-source but the NEOs are still using open-source code others can independently verify. It integrates well [with Windows 10](https://www.yubico.com/why-yubico/for-businesses/computer-login/windows-login/). If you not want to go with a YubiKey you can take a look at [Authy](https://authy.com). 
+
+
+
+### Slides
+
+- [How to go from Responding to Hunting with Sysinternals Sysmon](https://onedrive.live.com/view.aspx?resid=D026B4699190F1E6!2843&ithint=file%2cpptx&app=PowerPoint&authkey=!AMvCRTKB_V1J5ow)
+- [111 Attacking EvilCorp Anatomy of a Corporate Hack](https://adsecurity.org/wp-content/uploads/2016/09/DerbyCon6-2016-AttackingEvilCorp-Anatomy-of-a-Corporate-Hack-Presented.pdf)
+- [Real Solutions From Real Incidents: Save Money and Your Job!](https://evil.plumbing/Current-version-June.pdf)
+
+
+
+### Additional resources
+
+- [ADSecurity](https://adsecurity.org/)
+- [Harmj0y's blog](http://blog.harmj0y.net/)
+- [Sysmon SecuriTay's configuration file](https://github.com/SwiftOnSecurity/sysmon-config) - template with default high-quality event tracing
+- [Explaining and adapting Tay’s Sysmon configuration](https://medium.com/@lennartkoopmann/explaining-and-adapting-tays-sysmon-configuration-27d9719a89a8#.mi0rmwn1v)
+- [Use of PSExec](https://www.toshellandback.com/2017/02/11/psexec/)

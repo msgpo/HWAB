@@ -46,3 +46,6 @@ Main questions will be answered like - are you safe if:
 Research:
 * https://nakedsecurity.sophos.com/2016/05/16/my-anti-virus-is-up-to-date-so-i-am-protected-right/
 * https://github.com/iadgov/Secure-Host-Baseline
+* https://chromium.googlesource.com/chromium/
+* https://pages.nist.gov/800-63-3/
+* https://portal.msrc.microsoft.com/en-US/security-guidance
